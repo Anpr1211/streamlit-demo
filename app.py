@@ -15,7 +15,7 @@ import streamlit as st
 import numpy as np
 
 # reading the dataset
-data = pd.read_csv(r"C:\Users\ankit\Downloads\test.csv\test.csv", index_col='Unnamed: 0', nrows=1000)
+data = pd.read_csv("https://raw.githubusercontent.com/Anpr1211/streamlit-demo/main/test.csv", index_col='Unnamed: 0', nrows=1000)
 
 data = pd.get_dummies(data, columns=['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction'])
 
